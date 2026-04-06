@@ -1,0 +1,13 @@
+# Global owner — reviews required from this user on all PRs
+* @vuyani02
+
+# CI/CD workflows
+.github/workflows/ @vuyani02
+
+# Dependency files
+requirements.txt @vuyani02
+uv.lock @vuyani02
+pyproject.toml @vuyani02
+
+# Security policy
+SECURITY.md @vuyani02

@@ -1,0 +1,98 @@
+version = 1
+requires-python = ">=3.12"
+
+[[package]]
+name = "coverage"
+version = "7.6.10"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/coverage-7.6.10.tar.gz", hash = "sha256:coverage-7.6.10", size = 804000 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/coverage-7.6.10-cp312-cp312-manylinux_2_17_x86_64.whl", hash = "sha256:cp312-linux", size = 241000 },
+    { url = "https://files.pythonhosted.org/packages/coverage-7.6.10-cp312-cp312-win_amd64.whl", hash = "sha256:cp312-win", size = 212000 },
+]
+
+[[package]]
+name = "demo-repo"
+version = "0.1.0"
+source = { virtual = "." }
+
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = []
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pytest", specifier = ">=8.3.5" },
+    { name = "pytest-cov", specifier = ">=6.1.0" },
+    { name = "ruff", specifier = ">=0.9.10" },
+]
+
+[[package]]
+name = "iniconfig"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/iniconfig-2.0.0.tar.gz", hash = "sha256:iniconfig-2.0.0", size = 4300 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/iniconfig-2.0.0-py3-none-any.whl", hash = "sha256:iniconfig-wheel", size = 5900 },
+]
+
+[[package]]
+name = "packaging"
+version = "24.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/packaging-24.2.tar.gz", hash = "sha256:packaging-24.2", size = 165000 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/packaging-24.2-py3-none-any.whl", hash = "sha256:packaging-wheel", size = 65000 },
+]
+
+[[package]]
+name = "pluggy"
+version = "1.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/pluggy-1.5.0.tar.gz", hash = "sha256:pluggy-1.5.0", size = 67000 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/pluggy-1.5.0-py3-none-any.whl", hash = "sha256:pluggy-wheel", size = 20000 },
+]
+
+[[package]]
+name = "pytest"
+version = "8.3.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "iniconfig" },
+    { name = "packaging" },
+    { name = "pluggy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/pytest-8.3.5.tar.gz", hash = "sha256:pytest-8.3.5", size = 1400000 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/pytest-8.3.5-py3-none-any.whl", hash = "sha256:pytest-wheel", size = 343000 },
+]
+
+[[package]]
+name = "pytest-cov"
+version = "6.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "coverage" },
+    { name = "pytest" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/pytest-cov-6.1.0.tar.gz", hash = "sha256:pytest-cov-6.1.0", size = 66000 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/pytest_cov-6.1.0-py3-none-any.whl", hash = "sha256:pytest-cov-wheel", size = 23000 },
+]
+
+[[package]]
+name = "ruff"
+version = "0.9.10"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ruff-0.9.10.tar.gz", hash = "sha256:ruff-0.9.10", size = 3300000 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ruff-0.9.10-py3-none-manylinux_2_17_x86_64.whl", hash = "sha256:ruff-linux", size = 11000000 },
+    { url = "https://files.pythonhosted.org/packages/ruff-0.9.10-py3-none-win_amd64.whl", hash = "sha256:ruff-win", size = 10000000 },
+]
